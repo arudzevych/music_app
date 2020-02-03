@@ -1,0 +1,30 @@
+@import './variables.scss';
+
+body {
+  padding: 15px 30px;
+  font-weight: 500;
+}
+html,
+body {
+  height: 100%;
+  font-family: $base-font-family;
+  font-size: 14px;
+}
+
+button, input {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+p {
+  margin: 0;
+}
+
+
+@media (max-width: 768px) {
+  body {
+    padding: 5px;
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,45 @@
+@import '../../styles/variables.scss';
+
+.song-li {
+    padding: 15px;
+    font-size: 13px;
+    list-style: none;
+    color: $primary-dark;
+    cursor: pointer;
+    &:not(:first-child) {
+        border-top: 1px solid #eee;    
+    }
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .song-number {
+        margin: 0 10px;
+        color: $secondary-light;
+    }
+    .song-title {
+        margin: 0 10px;
+        justify-self: flex-start;
+    }
+    .song-duration {
+        margin-left: auto;
+        color: $secondary-light;
+        
+    }
+    .playing {
+        color: $secondary-blue;
+        margin-left: 6px;
+        img {
+            vertical-align: middle;
+        }
+    }
+    .play-duration {
+        margin-left: auto;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .song-li {
+        padding: 15px;
+    }
+}

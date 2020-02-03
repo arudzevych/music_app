@@ -1,0 +1,22 @@
+@import '../../styles/variables.scss';
+
+.songs-pane {
+    min-width: 100%;
+    margin-bottom: 5px;
+    box-shadow: $box-shadow;
+    height: 350px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    &_loading {
+        display: block;
+        padding: 30px;;
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .songs-pane {
+        height: 450px;
+    }
+  }

@@ -1,0 +1,144 @@
+@import '../../styles/variables.scss';
+
+.music-pane {
+    box-shadow: $box-shadow;
+    &__visualization {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        .album-image {
+            margin: 15px;
+            min-width: 100px;
+            height: 100px;
+            background: $primary-light;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        .song-playback {
+            margin: 0 15px 15px 0;
+            width: 100%;
+                max-width: 700px;
+                min-width: 250px;
+            .play-time {
+                display: flex;
+                justify-content: space-between;
+                > span {
+                    font-size: 10px;
+                    color: #aaa;
+                    &:last-child {
+                        padding: 1px 10px;
+                        background: #555;
+                        color: #fff;
+                        border-radius: 20px;
+                    } 
+                }
+            }
+            .song-visualization {
+                width: 100%;
+                height: 70px;
+            }
+        }    
+    }
+    &__divider {
+        width: 100%;
+        height: 7px;
+        background: $blue-green-gradient;
+    }
+    &__instruments {
+        padding: 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .song-details {
+            margin: 0 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .song-round-img {
+                width: 30px;
+                height: 30px;
+                background-color: $primary-light;
+                border-radius: 20px;
+                img {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 20px;
+                }
+            }
+            &__container {
+                margin: 0 15px;
+                color: $primary-dark;
+                .song-title {
+                    font-size: 13px;
+                }
+                .song-author {
+                    font-size: 10px;
+                    margin-top: 2px;
+                }
+            }
+        }
+        .volume-level {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            .volume-bar {
+                margin: 4px;
+                width: 80px;
+                height: 2px;
+                background: $primary-light;
+                border-radius: 2px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .music-pane {
+        &__visualization {
+            justify-content: flex-start;
+            .album-image {
+                margin: 7px;
+                min-width: 90px;
+                height: 90px;
+                img {
+                    width: 90px;
+                    height: 90px;
+                }
+            }
+            .song-playback {
+                margin: 0 5px 5px 0;
+                .play-time {
+                    > span {
+                        font-size: 9px;
+                        &:last-child {
+                            padding: 1px 8px;
+                        } 
+                    }
+                }
+            }    
+        }
+        &__divider {
+            height: 5px;
+        }
+        &__instruments {
+            padding: 5px;
+            .song-details {
+                display: none;
+            }
+            .volume-level {
+                margin-right: 8px;
+                img {
+                    transform: scale(0.8);
+                }
+                .volume-bar {
+                    margin: 4px;
+                    width: 50px;
+                    height: 2px;
+                }
+            }
+        }
+    }
+}

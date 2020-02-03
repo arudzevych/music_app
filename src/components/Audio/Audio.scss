@@ -1,0 +1,28 @@
+
+.audio-container__instruments {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    > button {
+        cursor: pointer;
+        > img {
+            padding: 2px;
+            &:hover {
+                background: rgb(243, 243, 243);
+                border-radius: 20px;
+            }    
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .audio-container__instruments {
+        margin-left: 7px;
+        > button {
+            padding: 0;
+            img {
+                transform: scale(0.8);
+            }
+        }
+    }
+}

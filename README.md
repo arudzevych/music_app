@@ -1,32 +1,34 @@
 Quick start:
-  Clone the project
-  npm install
-  npm start
+  1. Clone the project,
+  2. npm install,
+  3. npm start.
 
-Description: 
+
+Description.
+
 Web app uses Deezer API to find music.
 
 It has the next features: 
-  -Application
-    +Responsive design
-    +Visualization with Web Audio API
+  1. Application:
+    Responsive design,
+    Visualization with Web Audio API.
     
-  -Header
-    +Search by artist
+  2. Header:
+    Search by artist
     
-  -Song widget
-    +Display song’s name, artist, poster
-    +Play
-    +Pause
-    +Next track
-    +Previous track
+  3. Song widget:
+    1) Display song’s name, artist, poster;
+    2) Play;
+    3) Pause;
+    4) Next track;
+    5) Previous track.
 
-  -Song list
-    +Represent current fetched songs in scrollable list
-    +Show loading state during search progress
-    +Highlight current track
+  4. Song list:
+    Represent current fetched songs in scrollable list,
+    Show loading state during search progress,
+    Highlight current track.
 
 Technology stack:
-  React
-  Redux
-  ES6
+  1. React,
+  2. Redux,
+  3. ES6.
